@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My shopping cart</title>
+    <!--Bootstrap CSS-->
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap3.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/checkout.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/pikaday.css">
+    <!--===============^SASS link^================-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+  <body id="checkout">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="margin-bottom:50px">
+     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#checkout_navbar" aria-controls="checkout_navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html"  id="checkout_brand">Redgini</a>
+      <div class="collapse navbar-collapse" id="checkout_navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <p class="navbar_lines"><i class="fa fa-check" aria-hidden="true"></i> 100% Genuine & fresh Products</p>
+          </li>
+          <li class="nav-item">
+            <p class="navbar_lines"><i class="fa fa-shield" aria-hidden="true"></i> Secure Payments</p>
+          </li>
+          <li class="nav-item">
+            <p class="navbar_lines"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Free delivery</p>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+      <div class="col-md-8">
+
+        <div class="card shadow_depth_1" id="checkout_details">
+          <div class="col-md-12" id="checkout_phone_verify">
+              <h6><i class="fa fa-check-circle" aria-hidden="true"></i> Phone number verification</h6>
+              <p>We need your phone number so that we can update you about your order.</p>
+              <div class="row" id="group">
+                <div class="col-md-4" id="checkout_phone_input">
+                  <div class="input-group input-group-sm">
+        						<div class="input-group-addon input-group-addon-sm">+91</i>
+        						</div>
+                    <input type="tel" class="form-control form-control-sm" id="checkout_enter_phone" style="width: 65%" maxlength="10">
+        					</div>
+                </div>
+
+                <div class="col-md-4">
+                    <button class="btn btn-sm myBtn" type="button" name="button" style="width:100%;font-weight:bold">Verify number</button>
+                </div>
+
+                <div class="col-md-4"><a href="#" style="font-size:13px">Resend OTP</a></div>
+              </div>
+              <p id="otp_enter_header">Enter OTP below:</p>
+              <div class="row" id="group1">
+                <div class="col-md-4" id="checkout_phone_input">
+                    <input type="tel" class="form-control form-control-sm"
+                    style="width: 50%" maxlength="6">
+        				</div>
+                <div class="col-md-4">
+                    <button class="btn btn-sm myBtn" type="button" name="button" style="font-weight:bold">Next</button>
+                </div>
+                <div class="col-md-4"></div>
+              </div>
+
+
+          </div>
+          <hr>
+          <!--=====================================-->
+
+          <div class="col-md-12" id="">
+            <h6><i class="fa fa-check-circle" aria-hidden="true"></i> Delivery Address</h6>
+            <p>Enter your address details so that we can deliver your product to you as soon as possible !</p>
+            <form id="checkout_form" action="#" method="POST">
+
+    					<div class="form-group">
+    						<label for="form_name">Name</label>
+    						<input type="text" class="form-control form-control-sm" id="form_name" value="" placeholder="">
+    					</div>
+
+              <div class="form-group">
+    						<label for="form_flat">Flat / House / Office No.</label>
+    						<input type="text" class="form-control form-control-sm" id="form_flat" value="" placeholder="">
+    					</div>
+
+              <div class="form-group">
+    						<label for="form_street">Street / Society / Office Name</label>
+    						<input type="text" class="form-control form-control-sm" id="form_street" value="" placeholder="">
+    					</div>
+
+              <div class="form-group">
+    						<label for="form_area">Area</label>
+                <select class="form-control form-control-sm" id="form_area">
+                    <option>Gangapur road</option>
+                    <option>College road</option>
+                    <option>Indira nagar</option>
+                    <option>Satpur</option>
+                    <option>Cidco</option>
+                    <option>Nashik-road / Jail-road</option>
+                    <option>Gangapur gaon, Aanandwali, etc.</option>
+                    <option>Govind nagar</option>
+                </select>
+    					</div>
+
+              <div class="form-group">
+    						<label for="form_city">City</label>
+                <input type="text" class="form-control form-control-sm" id="form_state" placeholder="Nashik" disabled>
+    					</div>
+              <div class="form-group">
+    						<label for="form_state">State</label>
+                <input type="text" class="form-control form-control-sm" id="form_state" placeholder="Maharashtra" disabled>
+    					</div>
+
+              <button class="btn btn-sm myBtn" type="submit" name="button">Save</button>
+
+    			  </form>
+          </div>
+          <hr>
+          <!--=====================================-->
+
+          <div class="col-md-12">
+            <h6><i class="fa fa-check-circle" aria-hidden="true"></i> Delivery date & time</h6>
+            <p>Choose the time which is convenient to you...please checkout our delivery policies carefully !</p>
+            <p>Choose delivery date</p>
+            <p><input type="text" id="datepicker" class="form-control form-control-sm"></p>
+            <p>Choose delivery time</p>
+            <div id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="card">
+                <div class="card-header" role="tab" id="heading1">
+                  <h5 class="mb-0">
+                    <p><a class="time_header" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                      Standard delivery
+                    </a></p>
+                  </h5>
+                </div>
+
+                <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading1">
+                  <div class="card-block">
+                    <p><ul class="std_del_list">
+                      <li><input type="radio" name="" value=""> 04:00PM - 06:00PM</li>
+                      <li><input type="radio" name="" value=""> 06:00PM - 08:00PM</li>
+                      <li><input type="radio" name="" value=""> 08:00PM - 11:00PM</li>
+                    </ul></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" role="tab" id="heading2">
+                  <h5 class="mb-0">
+                    <p><a class="collapsed time_header" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                      Fixed-time delivery
+                    </a></p>
+                  </h5>
+                </div>
+                <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                  <div class="card-block">
+                    <p><div class="row" id="fixed_time">
+                      <div class="col-md-6">
+                        <select class="custom-select">
+                          <option value="9" selected>9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                        </select>
+                        <select class="custom-select">
+                          <option value="0" selected>00</option>
+                          <option value="5">05</option>
+                          <option value="10">10</option>
+                          <option value="15">15</option>
+                          <option value="20">20</option>
+                          <option value="25">25</option>
+                          <option value="30">30</option>
+                          <option value="35">35</option>
+                          <option value="40">40</option>
+                          <option value="45">45</option>
+                          <option value="50">50</option>
+                          <option value="55">55</option>
+                        </select>
+                        <select class="custom-select">
+                          <option value="" selected>AM</option>
+                          <option value="">PM</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <input class="form-control" type="text" name="" value="">
+                      </div>
+                      <!--<div class="col-md-4">
+
+                      </div>-->
+                    </div>
+                    </p>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" role="tab" id="heading3">
+                    <h5 class="mb-0">
+                      <p><a class="collapsed time_header" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        Mid-night delivery
+                      </a></p>
+                    </h5>
+                  </div>
+                  <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3">
+                    <div class="card-block">
+                      <p><ul class="std_del_list">
+                        <li><input type="radio" name="" value=""> 11:00PM - 11:30PM</li>
+                        <li><input type="radio" name="" value=""> 11:30PM - 11:59PM</li>
+                      </ul></p>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" role="tab" id="heading4">
+                      <h5 class="mb-0">
+                        <p><a class="collapsed time_header" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                          Morning delivery
+                        </a></p>
+                      </h5>
+                    </div>
+                    <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4">
+                      <div class="card-block">
+                        <p><ul class="std_del_list">
+                          <li><input type="radio" name="" value=""> 09:00AM - 11:00AM</li>
+                          <li><input type="radio" name="" value=""> 11:00AM - 01:00PM</li>
+                          <li><input type="radio" name="" value=""> 01:00PM - 04:00PM</li>
+
+                        </ul></p>
+                      </div>
+                      </div>
+                    </div>
+              </div>
+          </div>
+
+          <hr>
+
+          <div class="col-md-12">
+            <p><button class="btn myBtn" id="pay_btn" type="button" name="button">Procced to pay</button></p>
+          </div>
+
+              </div>
+            </div>
+          </div>
+
+      <!--=================left block starts========================-->
+      <div class="col-md-4">
+        <div class="card shadow_depth_1" id="order_details">
+
+        </div>
+      </div>
+      <!--=================left block ends========================-->
+      </div>
+      </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="js/bootstrap3.min.js"></script>-->
+    <script src="js/jquery.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+		<!--<script type="text/javascript" src="js/angular.min.js"></script>-->
+    <script type="text/javascript" src="js/pikaday.js"></script>
+    <script>
+      var picker = new Pikaday(
+      {
+          field: document.getElementById('datepicker'),
+          firstDay: 1,
+          minDate: new Date(),
+          maxDate: new Date(2020, 12, 31),
+          yearRange: [2000,2020]
+      });
+    </script>
+  </body>
+</html>
