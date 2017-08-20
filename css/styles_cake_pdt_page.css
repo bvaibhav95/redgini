@@ -34,20 +34,48 @@ body#cake_product_page .nav-item:hover{
 	font-weight: bold;
 	text-decoration: underline;
 }
-
-body#cake_product_page #signIn_navbar {
-    color: white;
-    background-color: #CC0000;
-		font-weight: bold;
-		/*margin: 5px;*/
-		padding: 0px 5px 0px 5px;
-		border-radius: 2px;
-}
 body#cake_product_page .navbar_lines{
   color: grey;
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
 	padding: 20px 5px 0 5px;
+}
+body#cake_product_page #signIn_navbar{
+    color: #fff;
+    background-color: #CC0000;
+    border-color: #CC0000;
+		font-weight: bold;
+		margin: 5px;
+		padding: 5px 5px 7px 5px;
+}
+
+body#cake_product_page #signIn_navbar:hover{
+	cursor: pointer;
+	background-color: white;
+	border-color:  #CC0000;
+	color: #CC0000;
+	font-weight: bold;
+}
+body#cake_product_page #cart_navbar {
+    color: #CC0000;
+    background-color: white;
+    border-color: #CC0000;
+		font-weight: bold;
+		margin: 5px;
+		padding: 5px 5px 7px 5px;
+}
+body#cake_product_page #cart_navbar:hover{
+	cursor: pointer;
+	background-color: #CC0000;
+	border-color: #CC0000;
+	color: white;
+	font-weight: bold;
+}
+body#cake_product_page #shop_cart_home_icon{
+	color: #3d3a3a;
+}
+body#cake_product_page #shop_cart_home_icon:hover{
+	color: black;
 }
 body#cake_product_page .text-line {
     background-color: transparent;

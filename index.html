@@ -7,19 +7,9 @@
 
 	<title>Redgini | love in every bite</title>
 	<!--Bootstrap CSS-->
-	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap3.min.css">-->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles_homepage.css">
   <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<!--===============^SASS link^================-->
-
-
-	 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body id="homepage">
 
@@ -58,115 +48,12 @@
 		</ul>
 
   </div>
-	<a href="shopping_cart.html" id="shop_cart_home"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true" id="shop_cart_home_icon"></i></a>
+	<a href="shopping_cart.html" id="shop_cart_home"><i class="fa fa-shopping-cart fa-2x  hidden-sm-down" aria-hidden="true" id="shop_cart_home_icon"></i></a>
+	<a class="btn btn-danger pull-right btn-sm hidden-sm-up" href="shopping_cart.html" id="cart_navbar"  data-toggle="" data-target="">
+	Shopping cart</a>
 	<a class="btn btn-danger pull-right btn-sm" href="login_fb_gmail.html" id="signIn_navbar"  data-toggle="" data-target="">
 	Signup/Login</a>
 </nav>
-	<!--===================Navbar end============================-->
-
-<!--==============Modal window for signIn/Login======================-->
-<!-- Modal -->
-	<!--<div class="modal fade" id="phone_verification_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-
-				<div class="modal-header">
-	        <h5 class="modal-title" id="modal_nav_title" style="font-weight: bold">Phone Number Verification</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-sm-2"></div>
-				<div class="col-sm-8">
-					<div style="text-align: center">
-					Enter your phone number for verification via OTP-->
-					<!--=====Check if there are
-									 10 character and all are
-									 digits===-->
-				  <!--</div><br>
-					<div class="input-group">
-	 				  <div class="input-group-addon"> <i class="fa fa-mobile" aria-hidden="true"></i>
-						</div>
-						<div class="input-group-addon">+91</i>
-						</div>
-            <input type="tel" class="form-control" id="modal_signIn_phone" style="width: 65%" maxlength="10">
-					</div><br>
-						<button id="modal_nav_sendotp_button" type="button" class="btn btn-danger sendotp_next_btn" style="width: 100%" data-toggle="modal"
-						data-target="#modal_enter_otp" data-dismiss="modal">Send OTP</button>
-				</div>
-					<div class="col-sm-2"></div>
-				</div>
-
-				</div>
-	    </div>
-	  </div>
-	</div>-->
-	<!--*****OPTION FOR "BACK"...
-			if they want to change the number or
-			entered wrong number*******-->
-
-	<!--==============Modal window for signIn end======================-->
-
-	<!--===================Enter the OTP modal window signIn/Login=======================-->
-	<!-- Modal -->
-	<!--<div class="modal fade" id="modal_enter_otp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-
-					<div class="modal-header">
-						<h5 class="modal-title" id="modal_nav_title" style="font-weight: bold">Phone Number Verification</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-sm-2"></div>
-						<div class="col-sm-8">
-
-
-						<div style="text-align: center">
-						Enter 6-digit OTP sent to your phone
-						</div>
-
-
-						<div class="container">
-							<div class="row">
-								<div class="col align-self-start"></div>
-								<div class="col align-self-center">
-										<input class="form-control" id="input_otp" type="text" name="" value="" maxlength="6">
-								</div>
-								<div class="col align-self-end"></div>
-							</div>
-						</div>
-
-							<button id="modal_nav_next_button" type="button" class="btn btn-danger sendotp_next_btn" style="width: 100%" onclick="window.location.href='login_fb_gmail.html'">Next</button>
-
-
-						</div>
-						<div class="col-sm-2"></div>
-					</div>
-
-					</div>
-				</div>
-			</div>
-		</div>-->
-
-	<!--===================Enter the OTP modal window signIn=======================-->
-
-	<!--===================Cover-page start============================-->
-  <!--<div id="coverpage" style="background-image: url('img/cake24.jpg');">
-    <div id="coverpage_caption">
-      <h1 class="display-3">Taste of happiness</h1>
-
-      <a href="" class="btn btn-lg btn-secondary" id="order_now_cover">Order Now</a>
-    </div>
-  </div>-->
-  <!--===================Cover-page end============================-->
 	<!--====================coverpage offers starts=========================-->
 	<div id="coverOffers" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
@@ -560,11 +447,11 @@
 		<div class="row">
 			<div class="col-md-3">
 				<div class="row">
-					<div class="col-md-3"></div>
-					<div class="col-md-6">
-						<img src="img/free_del.jpg" alt="free delivery" id="free_del_img">
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<img class="hidden-sm-down" src="img/free_del.jpg" alt="free delivery" id="free_del_img">
 					</div>
-					<div class="col-md-3"></div>
+					<div class="col-md-4"></div>
 				</div>
 					<div class="page-header">
 						<h2 class="spec_header">Free delivery</h2>
@@ -573,11 +460,11 @@
 			</div>
 			<div class="col-md-3">
 				<div class="row">
-					<div class="col-md-3"></div>
-					<div class="col-md-6">
-						<img src="img/bday_celeb.jpg" alt="free delivery" id="bday_celeb_img">
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<img class="hidden-sm-down" src="img/bday_celeb.jpg" alt="free delivery" id="bday_celeb_img">
 					</div>
-					<div class="col-md-3"></div>
+					<div class="col-md-4"></div>
 				</div>
 				<div class="page-header">
 					<h2 class="spec_header">Mid-night birthday</h2>
@@ -586,11 +473,11 @@
 			</div>
 			<div class="col-md-3">
 				<div class="row">
-					<div class="col-md-3"></div>
-					<div class="col-md-6">
-						<img src="img/wed_aniv.jpg" alt="free delivery" id="wed_aniv_img">
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<img class="hidden-sm-down" src="img/wed_aniv.jpg" alt="free delivery" id="wed_aniv_img">
 					</div>
-					<div class="col-md-3"></div>
+					<div class="col-md-4"></div>
 				</div>
 				<div class="page-header">
 					<h2 class="spec_header">Wedding anniversary</h2>
@@ -599,11 +486,11 @@
 			</div>
 			<div class="col-md-3">
 				<div class="row">
-					<div class="col-md-3"></div>
-					<div class="col-md-6">
-						<img src="img/quality_ass.jpg" alt="free delivery" id="quality_ass_img">
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<img class="hidden-sm-down" src="img/quality_ass.jpg" alt="free delivery" id="quality_ass_img">
 					</div>
-					<div class="col-md-3"></div>
+					<div class="col-md-4"></div>
 				</div>
 				<div class="page-header">
 					<h2 class="spec_header">Quality assured!</h2>
@@ -620,19 +507,21 @@
 		  <h4 style="text-align:center;color: #ADB0B6;font-weight:bold;font-size:25px; padding-top:20px;">Nashik's first online Cake shop</h4>
 		</div>
 		<div class="row" id="counter_segs">
-			<div class="col-md-4 xyz">
+			<div class="col-md-4">
 				<div class="counter-blk">
 					<h1><span class="start_count">100000</span>+</h1>
 					<p>HAPPY CUSTOMERS</p>
 				</div>
+				<hr style="background-color:white" class="hidden-sm-up">
 			</div>
-			<div class="col-md-4 xyz">
+			<div class="col-md-4">
 				<div class="counter-blk">
 					<h1><span class="start_count">5000</span>+</h1>
 					<p>ORDERS SERVED</p>
 				</div>
+				<hr style="background-color:white" class="hidden-sm-up">
 			</div>
-			<div class="col-md-4 xyz">
+			<div class="col-md-4">
 				<div class="counter-blk">
 					<h1><span class="start_count">500</span>+</h1>
 					<p>AVAILABLE PRODUCTS</p>
@@ -800,8 +689,8 @@
 	      </div>
 
 	    </div>
+		</div>
 
-	  </div>
 	  <div class="row">
 	    <div class="col-md-4"></div>
 	    <div class="col-md-4 social_network_btns">
@@ -813,14 +702,16 @@
 	            <li><a type="button" class="icoInstagram"><i class="fa fa-instagram"> </i></a></li>
 	            <li><a type="button" class="icoYoutube"><i class="fa fa-youtube-play"></i></a></li>
 	        </ul>
+					<h6 id="footer_oheoLink">© 2017 Copyright:<a href="https://www.redgini.com"> www.redgini.com</a></h6>
 	      </div>
 	    <div class="col-md-4"></div>
 	  <!--Copyright-->
-	  <div id="footer_oheoLink">
-	         <h6>© 2017 Copyright:<a href="https://www.oheo.in"> www.oheo.in</a></h6>
-	  </div>
+	    <!-- <div class="">
+	         <h6 id="footer_oheoLink">© 2017 Copyright:<a href="https://www.redgini.com"> www.redgini.com</a></h6>
+	    </div> -->
 	   <!--/.Copyright-->
-	    </div>
+	  </div>
+
 	</footer>
 
 	<!--===================Footer end============================-->

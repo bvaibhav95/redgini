@@ -21,7 +21,7 @@ body#homepage img{
 body#homepage #navbar_main{
 	font-family: 'Montserrat', sans-serif;
 }
-body#homepage #signIn_navbar {
+body#homepage #signIn_navbar{
     color: #fff;
     background-color: #CC0000;
     border-color: #CC0000;
@@ -37,7 +37,21 @@ body#homepage #signIn_navbar:hover{
 	color: #CC0000;
 	font-weight: bold;
 }
-
+body#homepage #cart_navbar {
+    color: #CC0000;
+    background-color: white;
+    border-color: #CC0000;
+		font-weight: bold;
+		margin: 5px;
+		padding: 5px 5px 7px 5px;
+}
+body#homepage #cart_navbar:hover{
+	cursor: pointer;
+	background-color: #CC0000;
+	border-color: #CC0000;
+	color: white;
+	font-weight: bold;
+}
 /*==========Dropdown-content==============*/
 
 body#homepage .dropdown-content {
@@ -236,7 +250,7 @@ body#homepage .shadow_depth_4{
 /*==============counter design starts=============*/
 body#homepage #counter_show{
 	font-family: 'Montserrat', sans-serif;
-	height: 230px;
+	/*height: 230px;*/
 	width: 100%;
 	background-color: #282C35;
 	margin-top: 50px;
@@ -614,9 +628,6 @@ body#homepage .social-circle i {
 	transition: all 0.8s;
 }
 
-body#homepage #footer_oheoLink{
-	margin: 10px auto 0 auto;
-}
 body#homepage #footer_oheoLink a{
 	color: #ADB0B6;
 }
