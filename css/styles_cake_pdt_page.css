@@ -214,6 +214,9 @@ body#cake_product_page #sidebar_cake_cat .sidebar_cake_cat_items{
 /*=========side bar styling ends===========*/
 
 /*=========styling of cake boxes start============*/
+body#cake_product_page .shadow{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 body#cake_product_page .cake_box_row{
 	padding: 5px 0px 5px 0px;
 
@@ -230,20 +233,29 @@ body#cake_product_page .cake_box img{
 	border-radius: 7px;
 	vertical-align: middle;
 }
-body#cake_product_page .addToCart_buyNow_btn{
+body#cake_product_page .addToCart_btn{
 	border-radius: 15px;
-	font-size: 10px;
-	margin-top: -1px;
+	font-size: 11px;
+	margin-top: -3px;
+	margin-left: 17px;
+	background-color: #CC0000;
 }
-body#cake_product_page .addToCart_buyNow_btn:hover{
+body#cake_product_page .addToCart_btn:hover{
 	cursor:pointer;
-	font-size: 10px;
+	color: #CC0000;
+	border-color: #CC0000;
+	background-color: white;
 }
-body#cake_product_page .qty {
-    width: 20px;
-    height: 20px;
-    text-align: center;
-		margin: 3px 0px 0px 3px;
+body#cake_product_page .inc_dec_btn{
+	color: #CC0000;
+	border-color: #CC0000;
+	background-color: white;
+	border-radius: 15px;
+}
+body#cake_product_page .add-to-cart-qty{
+	color: black;
+	font-size: 15px;
+	background-color: white;
 }
 body#cake_product_page input.qtyplus {
 	  width:20px;

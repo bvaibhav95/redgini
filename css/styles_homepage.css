@@ -153,7 +153,6 @@ body#homepage #aboutus button:hover{
 /*=======about us ends=======*/
 /*============speciality add on start============*/
 body#homepage #speciality{
-	text-decoration: underline;
   text-align: center;
   font-weight: bold;
   margin-top: 50px;
