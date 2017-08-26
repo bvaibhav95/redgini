@@ -209,7 +209,16 @@ body#cake_product_page #sidebar_header{
 body#cake_product_page #sidebar_cake_cat .sidebar_cake_cat_items{
 	font-size: 13px;
   font-family: 'Montserrat', sans-serif;
-
+}
+body#cake_product_page #applyFiltersBtn{
+	background-color: #CC0000;
+	color: white;
+	margin-top: 5px;
+}
+body#cake_product_page #applyFiltersBtn:hover{
+	color: #CC0000;
+	border-color: #CC0000;
+	background-color: white;
 }
 /*=========side bar styling ends===========*/
 
