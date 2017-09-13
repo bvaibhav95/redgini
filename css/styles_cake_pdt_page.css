@@ -214,6 +214,7 @@ body#cake_product_page #applyFiltersBtn{
 	background-color: #CC0000;
 	color: white;
 	margin-top: 5px;
+	width: 100%;
 }
 body#cake_product_page #applyFiltersBtn:hover{
 	color: #CC0000;

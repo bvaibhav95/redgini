@@ -46,49 +46,14 @@
       <div class="col-md-8">
 
         <div class="card shadow_depth_1" id="checkout_details">
-          <div class="col-md-12" id="checkout_phone_verify">
-              <h6><i class="fa fa-check-circle" aria-hidden="true"></i> Phone number verification</h6>
-              <p>We need your phone number so that we can update you about your order.</p>
-              <div class="row" id="group">
-                <div class="col-md-4" id="checkout_phone_input">
-                  <div class="input-group input-group-sm">
-        						<div class="input-group-addon input-group-addon-sm">+91</i>
-        						</div>
-                    <input type="tel" class="form-control form-control-sm" id="checkout_enter_phone" style="width: 65%" maxlength="10">
-        					</div>
-                </div>
-
-                <div class="col-md-4">
-                    <button class="btn btn-sm myBtn" type="button" name="button" style="width:100%;font-weight:bold">Verify number</button>
-                </div>
-
-                <div class="col-md-4"><a href="#" style="font-size:13px">Resend OTP</a></div>
-              </div>
-              <p id="otp_enter_header">Enter OTP below:</p>
-              <div class="row" id="group1">
-                <div class="col-md-4" id="checkout_phone_input">
-                    <input type="tel" class="form-control form-control-sm"
-                    style="width: 50%" maxlength="6">
-        				</div>
-                <div class="col-md-4">
-                    <button class="btn btn-sm myBtn" type="button" name="button" style="font-weight:bold">Next</button>
-                </div>
-                <div class="col-md-4"></div>
-              </div>
-
-
-          </div>
-          <hr>
-          <!--=====================================-->
 
           <div class="col-md-12" id="">
             <h6><i class="fa fa-check-circle" aria-hidden="true"></i> Delivery Address</h6>
             <p>Enter your address details so that we can deliver your product to you as soon as possible !</p>
             <form id="checkout_form" action="#" method="POST">
-
-    					<div class="form-group">
-    						<label for="form_name">Name</label>
-    						<input type="text" class="form-control form-control-sm" id="form_name" value="" placeholder="">
+              <div class="form-group">
+    						<label for="name">Name</label>
+    						<input type="text" class="form-control form-control-sm" id="name" value="" placeholder="">
     					</div>
 
               <div class="form-group">
@@ -137,125 +102,23 @@
             <p>Choose delivery date</p>
             <p><input type="text" id="datepicker" class="form-control form-control-sm"></p>
             <p>Choose delivery time</p>
-            <div id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="card">
-                <div class="card-header" role="tab" id="heading1">
-                  <h5 class="mb-0">
-                    <p><a class="time_header" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                      Standard delivery
-                    </a></p>
-                  </h5>
-                </div>
+            <ul id="std_del_list">
+                    <p class="timeSlotHeader">Standard delivery</p>
+                    <li><input type="radio" name="delTime" value="1" id="delTime1" checked><label                                              for="delTime1">&nbsp;04:00PM - 06:00PM</label></li>
+                    <li><input type="radio" name="delTime" value="2" id="delTime2"><label                                              for="delTime2">&nbsp;06:00PM - 08:00PM</label></li>
+                    <li><input type="radio" name="delTime" value="3" id="delTime3"><label                                              for="delTime3">&nbsp;08:00PM - 11:00PM</label></li>
+                    <p class="timeSlotHeader">Mid night delivery</p>
+                    <li><input type="radio" name="delTime" value="4" id="delTime4"><label                                              for="delTime4">&nbsp;11:00PM - 11:30PM</label></li>
+                    <li><input type="radio" name="delTime" value="5" id="delTime5"><label                                              for="delTime5">&nbsp;11:30PM - 11:59PM</label></li>
+                    <p class="timeSlotHeader">Morning delivery</p>
+                    <li><input type="radio" name="delTime" value="6" id="delTime6"><label                                              for="delTime6">&nbsp;09:00AM - 11:00AM</label></li>
+                    <li><input type="radio" name="delTime" value="7" id="delTime7"><label                                             for="delTime7">&nbsp;11:00AM - 01:00PM</label></li>
+                    <li><input type="radio" name="delTime" value="8" id="delTime8"><label                                              for="delTime8">&nbsp;01:00PM - 04:00PM</label></li>
+                    <!-- <li><input type="radio" name="delTime" value="9" id="delTime9"><label
+                        for="delTime9">&nbsp;Fixed time delivery</label></li>
+                    <input id="fixDelTime" type="time" class="form-control form-control-sm" placeholder="click here"> -->
+                </ul>
 
-                <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading1">
-                  <div class="card-block">
-                    <p><ul class="std_del_list">
-                      <li><input type="radio" name="" value=""> 04:00PM - 06:00PM</li>
-                      <li><input type="radio" name="" value=""> 06:00PM - 08:00PM</li>
-                      <li><input type="radio" name="" value=""> 08:00PM - 11:00PM</li>
-                    </ul></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header" role="tab" id="heading2">
-                  <h5 class="mb-0">
-                    <p><a class="collapsed time_header" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                      Fixed-time delivery
-                    </a></p>
-                  </h5>
-                </div>
-                <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2">
-                  <div class="card-block">
-                    <p><div class="row" id="fixed_time">
-                      <div class="col-md-6">
-                        <select class="custom-select">
-                          <option value="9" selected>9</option>
-                          <option value="10">10</option>
-                          <option value="11">11</option>
-                          <option value="12">12</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                          <option value="10">10</option>
-                          <option value="11">11</option>
-                        </select>
-                        <select class="custom-select">
-                          <option value="0" selected>00</option>
-                          <option value="5">05</option>
-                          <option value="10">10</option>
-                          <option value="15">15</option>
-                          <option value="20">20</option>
-                          <option value="25">25</option>
-                          <option value="30">30</option>
-                          <option value="35">35</option>
-                          <option value="40">40</option>
-                          <option value="45">45</option>
-                          <option value="50">50</option>
-                          <option value="55">55</option>
-                        </select>
-                        <select class="custom-select">
-                          <option value="" selected>AM</option>
-                          <option value="">PM</option>
-                        </select>
-                      </div>
-                      <div class="col-md-6">
-                        <input class="form-control" type="text" name="" value="">
-                      </div>
-                      <!--<div class="col-md-4">
-
-                      </div>-->
-                    </div>
-                    </p>
-                  </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header" role="tab" id="heading3">
-                    <h5 class="mb-0">
-                      <p><a class="collapsed time_header" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                        Mid-night delivery
-                      </a></p>
-                    </h5>
-                  </div>
-                  <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3">
-                    <div class="card-block">
-                      <p><ul class="std_del_list">
-                        <li><input type="radio" name="" value=""> 11:00PM - 11:30PM</li>
-                        <li><input type="radio" name="" value=""> 11:30PM - 11:59PM</li>
-                      </ul></p>
-                    </div>
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-header" role="tab" id="heading4">
-                      <h5 class="mb-0">
-                        <p><a class="collapsed time_header" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                          Morning delivery
-                        </a></p>
-                      </h5>
-                    </div>
-                    <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4">
-                      <div class="card-block">
-                        <p><ul class="std_del_list">
-                          <li><input type="radio" name="" value=""> 09:00AM - 11:00AM</li>
-                          <li><input type="radio" name="" value=""> 11:00AM - 01:00PM</li>
-                          <li><input type="radio" name="" value=""> 01:00PM - 04:00PM</li>
-
-                        </ul></p>
-                      </div>
-                      </div>
-                    </div>
-              </div>
           </div>
 
           <hr>
@@ -286,7 +149,7 @@
     <script src="js/bootstrap.min.js"></script>
 		<!--<script type="text/javascript" src="js/angular.min.js"></script>-->
     <script type="text/javascript" src="js/pikaday.js"></script>
-    <script>
+    <script type="text/javascript">
       var picker = new Pikaday(
       {
           field: document.getElementById('datepicker'),
@@ -295,6 +158,20 @@
           maxDate: new Date(2020, 12, 31),
           yearRange: [2000,2020]
       });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $("#fixDelTime").hide();
+          $("input[name=delTime]").on("change", function() {
+
+             var test = $(this).val();
+             if (test==9){
+                 $("#fixDelTime").show();
+             }else {
+                 $("#fixDelTime").hide();
+             }
+          });
+        });
     </script>
   </body>
 </html>
