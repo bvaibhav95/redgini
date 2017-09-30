@@ -381,5 +381,14 @@ body#login_details #footer_oheoLink a{
 body#login_details #footer_oheoLink a:hover{
 	color: white;
 }
-
+body#login_details #facebook_btn{
+	background-color:  #3b5998;
+	color: white;
+	font-weight: bold;
+}
+body#login_details #facebook_btn:hover{
+	background-color:  white;
+	color: #3b5998;
+	border-color: #3b5998;
+}
 /*========social section ends========*/

@@ -501,5 +501,14 @@ body#cake_product_page #footer_oheoLink a{
 body#cake_product_page #footer_oheoLink a:hover{
 	color: white;
 }
-
+body#cake_product_page #facebook_btn{
+	background-color:  #3b5998;
+	color: white;
+	font-weight: bold;
+}
+body#cake_product_page #facebook_btn:hover{
+	background-color:  white;
+	color: #3b5998;
+	border-color: #3b5998;
+}
 /*========social section ends========*/

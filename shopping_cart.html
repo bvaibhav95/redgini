@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>My shopping cart</title>
+  <title>Redgini | my shopping cart</title>
   <!--Bootstrap CSS-->
   <!--<link rel="stylesheet" type="text/css" href="css/bootstrap3.min.css">-->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -42,11 +42,11 @@
 <!--=============================================================================-->
 <div class="container" id="pop_pdt_seg">
 <!--Carousel Wrapper-->
-<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-    <!--Slides-->
+<!-- <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+    Slides
     <div class="carousel-inner" role="listbox">
 
-        <!--First slide-->
+        First slide
         <div class="carousel-item active">
 
             <div class="col-md-4">
@@ -88,7 +88,7 @@
                 </div>
             </div>
 
-            <!--<div class="col-md-3 hidden-sm-down">
+            <div class="col-md-3 hidden-sm-down">
                 <div class="card">
                   <div class="plp-pdt_img">
                     <img class="img-fluid pop_pdt_img" src="img/cake9.jpg" alt="Card image cap">
@@ -101,12 +101,12 @@
                       </div>
                     </div>
                 </div>
-            </div>-->
+            </div>
 
         </div>
-        <!--/.First slide-->
+        /.First slide
 
-        <!--Second slide-->
+        Second slide
         <div class="carousel-item">
 
             <div class="col-md-4">
@@ -148,7 +148,7 @@
                 </div>
             </div>
 
-            <!--<div class="col-md-3 hidden-sm-down">
+            <div class="col-md-3 hidden-sm-down">
                 <div class="card">
                   <div class="plp-pdt_img">
                     <img class="img-fluid pop_pdt_img" src="img/cake28.jpg" alt="Card image cap">
@@ -161,12 +161,12 @@
                       </div>
                     </div>
                 </div>
-            </div>-->
+            </div>
 
         </div>
-        <!--/.Second slide-->
+        /.Second slide
 
-        <!--Third slide-->
+        Third slide
         <div class="carousel-item">
 
             <div class="col-md-4">
@@ -208,7 +208,7 @@
                 </div>
             </div>
 
-            <!--<div class="col-md-3 hidden-sm-down">
+            <div class="col-md-3 hidden-sm-down">
                 <div class="card">
                   <div class="plp-pdt_img">
                     <img class="img-fluid pop_pdt_img" src="img/cake16.jpg" alt="Card image cap">
@@ -221,13 +221,13 @@
                       </div>
                     </div>
                 </div>
-            </div>-->
+            </div>
 
         </div>
-        <!--/.Third slide-->
+        /.Third slide
 
     </div>
-    <!--/.Slides-->
+    /.Slides
     <a class="carousel-control-prev" href="#multi-item-example" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
@@ -236,7 +236,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-</div>
+</div> -->
 <!--/.Carousel Wrapper-->
 </div>
 <!--=============================================================================-->
@@ -248,66 +248,30 @@
           <tr>
             <th>Sr.No</th>
             <th>Name</th>
-            <th>Weight</th>
-            <th>Unit price(1Kg)</th>
+            <th>1Kg price</th>
             <th>Quantity</th>
+            <th>Weight</th>
+            <th>Your weight cost</th>
             <th>Total</th>
             <th>Remove</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td><img src="img/cake4.jpg" alt="" class="img-rounded cart_cake_img">Mark</td>
-            <td class="cart_weight">1 Kg</td>
+            <th class="sr_no" scope="row">1</th>
+            <td class="cart_img"><img src="img/cake4.jpg" alt="" class="img-rounded cart_cake_img">Mark</td>
+            
             <td class="cart_unitprice">Rs. 500</td>
-            <td class="cart_qty"><input class="form-control form-control-sm cart_qty" type="number" value="1" maxlength="2"></td>
+            <td class="cake_qty">3</td>
+            <td class="cart_qty_col">
+              <div class="row">
+              <input class="form-control form-control-sm cart_qty col-md-8" type="number" value="1" maxlength="2">
+              <span class="col-md-4">Kg</span>
+              </div>
+            </td>
+            <td class="actual_cost">Rs. 600</td>
             <td class="cart_total">Otto</td>
             <td class="cart_remove_btn"><a class="btn btn-danger" href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td><img src="img/cake12.jpg" alt="" class="img-rounded cart_cake_img">Jacob</td>
-            <td class="cart_weight">1.5 Kg</td>
-            <td class="cart_unitprice">Rs. 500</td>
-            <td class="cart_qty"><input class="form-control form-control-sm cart_qty" type="number" value="1" maxlength="2"></td>
-            <td class="cart_total">Otto</td>
-            <td class="cart_remove_btn"><a class="btn btn-danger" href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td><img src="img/cake6.jpg" alt="" class="img-rounded cart_cake_img">Jacob</td>
-            <td class="cart_weight">1.5 Kg</td>
-            <td class="cart_unitprice">Rs. 500</td>
-            <td class="cart_qty"><input class="form-control form-control-sm cart_qty" type="number" value="2" maxlength="2"></td>
-            <td class="cart_total">Otto</td>
-            <td class="cart_remove_btn"><a class="btn btn-danger" href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td><img src="img/cake9.jpg" alt="" class="img-rounded cart_cake_img">Jacob</td>
-            <td class="cart_weight">2 Kg</td>
-            <td class="cart_unitprice">Rs. 500</td>
-            <td class="cart_qty"><input class="form-control form-control-sm cart_qty" type="number" value="1" maxlength="2"></td>
-            <td class="cart_total">Otto</td>
-            <td class="cart_remove_btn"><a class="btn btn-danger" href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td><img src="img/cake8.jpg" alt="" class="img-rounded cart_cake_img">Jacob</td>
-            <td class="cart_weight">2 Kg</td>
-            <td class="cart_unitprice">Rs. 500</td>
-            <td class="cart_qty"><input class="form-control form-control-sm cart_qty" type="number" value="3" maxlength="2"></td>
-            <td class="cart_total">Otto</td>
-            <td class="cart_remove_btn"><a class="btn btn-danger" href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td colspan="2" style="font-weight:bold; font-size:20px">Grand Total :</td>
-            <td style="font-weight:bold; font-size:20px">Rs. 2000</td>
-            <td></td>
           </tr>
         </tbody>
      </table>
