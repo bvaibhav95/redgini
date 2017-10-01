@@ -381,12 +381,12 @@ body#otp_page #footer_oheoLink a{
 body#otp_page #footer_oheoLink a:hover{
 	color: white;
 }
-body#homepage #facebook_btn{
+body#otp_page #facebook_btn{
 	background-color:  #3b5998;
 	color: white;
 	font-weight: bold;
 }
-body#homepage #facebook_btn:hover{
+body#otp_page #facebook_btn:hover{
 	background-color:  white;
 	color: #3b5998;
 	border-color: #3b5998;
