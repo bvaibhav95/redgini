@@ -110,14 +110,54 @@ body#cake_product_page #shop_cart_home_icon:hover{
 /*=========shopping cart icon ends*/
 /*===========navbar styling ends==============*/
 /*============coverapage for the cake product page starts=====*/
-body#cake_product_page #cake_pdt_coverpage{
-	/*background: url("img/cake5.jpg") center center no-repeat;
-	*/background-size: cover;
+
+@media (min-width: 480px) {
+	body#cake_product_page #cake_pdt_coverpage{
+	    width: 100%;
+	    height: 165px;
+			display: flex;
+			align-items: center;
+	}
+}
+@media (min-width: 575px) {
+	body#cake_product_page #cake_pdt_coverpage{
+	    width: 100%;
+	    height: 200px;
+			display: flex;
+			align-items: center;
+	}
+}
+@media (min-width: 768px) {
+	body#cake_product_page #cake_pdt_coverpage{
+	    width: 100%;
+	    height: 250px;
+			display: flex;
+			align-items: center;
+	}
+}
+@media (min-width: 992px) {
+	body#cake_product_page #cake_pdt_coverpage{
+	    width: 100%;
+	    height: 350px;
+			display: flex;
+			align-items: center;
+	}
+}
+@media (min-width: 1200px) {
+	body#cake_product_page #cake_pdt_coverpage{
+	    width: 100%;
+	    height: 400px;
+			display: flex;
+			align-items: center;
+	}
+}
+/*body#cake_product_page #cake_pdt_coverpage{
+	background-size: cover;
 	height: 60%;
 	width: 100%;
 	display: flex;
 	align-items: center;
-}
+}*/
 body#cake_product_page #cake_pdt_coverpage_caption{
 	font-size: 1.4rem;
 	font-weight: 200;
